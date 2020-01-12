@@ -1,0 +1,50 @@
+#navigation-bar>ul{
+    list-style: none;
+    background: black;
+    height: 40px;
+    
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.widgets>li{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white !important;
+    font-family: Florence, cursive;
+    line-height: 16px;
+}
+
+.widgets>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+}
+
+#top-search>a{
+    color: white;
+    height: 80px;
+    font-size: 20px;
+    display: block;
+}
+
+
+#top-search {
+    position: absolute;
+    right: 70px;
+    top: 15px;
+    text-align: center;
+}

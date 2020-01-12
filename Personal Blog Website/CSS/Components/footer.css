@@ -1,0 +1,12 @@
+.footer{
+    grid-area: ft;
+    background: black;
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    margin: auto;
+    line-height: 47px;
+}

@@ -1,0 +1,18 @@
+.blog-title{
+    text-align: center;
+    font-family: Florence, cursive;
+    /*font-size: 40px;*/
+    background: url('../../Media/background-1.jpg');
+    height: 300px;
+    padding-top: 1px;
+
+}
+
+#title{
+    padding-top: 55px;
+    font-size: 60px;
+}
+
+#subtitle{
+    font-size: 30px;
+}

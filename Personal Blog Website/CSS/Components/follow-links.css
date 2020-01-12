@@ -1,0 +1,39 @@
+.follow-links-grid{
+    display: flex;
+    width: 670px;
+    /*height: 600px;*/
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    margin-left: 210px;
+}
+
+.follow-links>h2{
+    text-align: center;
+    font-family: Florence, cursive;
+    font-size: 25px;
+    margin: 4px;
+    padding-bottom: 27px;
+}
+
+.social-link{
+    width: 182px;
+    height:77px;
+}
+
+.social-network-list{
+    list-style: none;
+}
+.social-link>i{
+    color: #df1a71;
+    background: black;
+    border-radius: 50%;
+    width: 77px;
+    height: 77px;
+    line-height: 77px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.social-link>a{
+    text-decoration: none;
+}

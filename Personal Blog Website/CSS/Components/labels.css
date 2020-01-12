@@ -1,0 +1,43 @@
+.label-list-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:1220px;
+    flex-wrap: wrap;
+}
+
+.labels h2{
+    text-align: center;
+    font-family: Florence, cursive;
+    font-size: 25px;
+    margin: auto;
+}
+
+.label-list{
+    text-decoration: none;
+    list-style: none;
+}
+
+.label-tag{
+    width: fit-content;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px;
+}
+
+.label-tag>a{
+    color: #df1a71;
+    font: normal bold 15px Florence, cursive;
+    line-height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-width: 736px) and (min-width: 414px){
+.label-tag {
+    width: fit-content;
+    height: 35px;
+    line-height: 35px;
+}
+}

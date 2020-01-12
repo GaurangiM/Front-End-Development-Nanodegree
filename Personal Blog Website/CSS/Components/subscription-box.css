@@ -1,0 +1,17 @@
+.subscription-box{
+    text-align: center;
+    font-family: Florence, cursive;
+    font-size: 25px;
+}
+
+#sign-up-email{
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#sign-up-button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

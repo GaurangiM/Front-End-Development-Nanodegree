@@ -1,0 +1,25 @@
+.blog-post-section .social-sharing li{
+    display: inline-block;
+    padding: inherit;
+}
+
+.blog-post-section .social-sharing ul{
+    list-style: none;
+}
+
+.fb-share{
+    color: darkorange;
+}
+
+.twitter-share{
+    color: darkturquoise;
+}
+
+.insta-share{
+    color: darkviolet;
+}
+
+.pinterest-share{
+    color: darkred;
+}
+

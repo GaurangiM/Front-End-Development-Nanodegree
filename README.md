@@ -7,3 +7,5 @@ Developed a Personal Blog website using HTML5 and CSS3. Skills include:
 * Created Home and Blog pages using CSS FlexboxM and Grid frameworks
 * Provided custom images, layout and styling to both pages
 * Pages made mobile-friendly and responsive on most popular devices
+
+Proficiencies include: HTML5, CSS3, Flexbox, CSS grid

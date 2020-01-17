@@ -8,19 +8,21 @@
         <link rel="stylesheet" href="../CSS/Pages/blog-post.css">
         <link href="//db.onlinewebfonts.com/c/0241ad69caef008726022256bf0af826?family=Freeland" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link rel="icon" href="../Media/favicon-32x32.png" type="image/png" sizes="32x32">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
 
     </head>
     <body>
-        <div id="navigation-bar">
-            <ul class="widgets">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
+        <header>
+            <div id="navigation-bar">
+                <ul class="widgets">
+                    <li><a class="menu-item" href="../index.html">Home</a></li>
+                    <li><a class="menu-item" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
         <div class="container box">
             <div class="blog-title">
                 <h1 id="title">Eat Sleep Craft Repeat</h1>
@@ -31,30 +33,30 @@
                     <p>Fold and cut paper into amazing three-dimensional snowflakes. Our instructions include crafting these snowflakes with and without using printable templates.</p>
                     <ul class="social-sharing">
                         <span>Share this story:</span>
-                        <li>
+                        <li class="social-sharing-link">
                             <a class="fb-share" href="#">
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </li>
-                        <li>
+                        <li class="social-sharing-link">
                             <a class="twitter-share" href="#">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>
-                        <li>
+                        <li class="social-sharing-link">
                             <a class="insta-share" href="#">
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </li>
-                        <li>
+                        <li class="social-sharing-link">
                             <a class="insta-share" href="#">
                                 <i class="fa fa-pinterest"></i>
                             </a>
                         </li>
                     </ul>
                     
-                    <img src="../Media/3dpapersnowflake-main.jpg" style="height:420px;">
-                    <p style="text-transform: uppercase;">Supplies Needed:</p>
+                    <img class="blog-post-section-img" src="../Media/3dpapersnowflake-main.jpg">
+                    <p>SUPPLIES NEEDED:</p>
                     <ul class="supply-list">
                         <li >White, blue, or silver paper</li>
                         <li>Scissors</li>
@@ -69,8 +71,8 @@
                 </p>
             </div>
             <div class="post-nav-bar box">
-                <button class="button button-arrow1" style="vertical-align:middle;float: left;"><span>Previous Post</span></button>
-                <button class="button button-arrow2" style="vertical-align:middle;float: right;"><span>Next Post</span></button>
+                <button class="button button-arrow1"><span>Previous Post</span></button>
+                <button class="button button-arrow2"><span>Next Post</span></button>
             </div>
             <div class="about-me box">
                 
@@ -103,18 +105,18 @@
             <div class="pinned-post box">
                 <h2>Pinned Post</h2>
                 <div class="pinned-post-list">
-                    <ul class="post-images pinned-post">
+                    <ul class="post-images pinned-post pinned-post-list">
                         <li class="thumbnail">
-                            <img class="tooltip" src="../Media/paper-fan.jpg">
+                            <img class="thumbnail-img" src="../Media/paper-fan.jpg">
                         </li>
                         <li class="thumbnail">
-                            <img src="../Media/3d-snowflake.jpg">
+                            <img class="thumbnail-img" src="../Media/3d-snowflake.jpg">
                         </li>
                         <li class="thumbnail">
-                            <img src="../Media/crepe-flowers.jpg">
+                            <img class="thumbnail-img" src="../Media/crepe-flowers.jpg">
                         </li>
                         <li class="thumbnail">
-                            <img src="../Media/snowflake.jpg">
+                            <img class="thumbnail-img" src="../Media/snowflake.jpg">
                         </li>
                     </ul>
                 </div>
@@ -124,22 +126,22 @@
                 <div class="follow-links-grid">
                     <ul class="social-network-list follow-links-grid">
                         <li class="social-link">
-                            <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fa fa-facebook social-icon"></i></a>
                         </li>
                         <li class="social-link">
-                            <a href="#" class="social-link"><i class="fa fa-pinterest" ></i></a>
+                            <a href="#" class="social-link"><i class="fa fa-pinterest social-icon" ></i></a>
                         </li>
                         <li class="social-link">
-                            <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fa fa-instagram social-icon"></i></a>
                         </li>
                         <li class="social-link">
-                            <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fa fa-twitter social-icon"></i></a>
                         </li>
                         <li class="social-link">
-                            <a href="#" class="social-link"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="social-link"><i class="fa fa-google-plus social-icon"></i></a>
                         </li>
                         <li class="social-link">
-                            <a href="#" class="social-link"><i class="fa fa-youtube">
+                            <a href="#" class="social-link"><i class="fa fa-youtube social-icon">
                                 
                             </i></a>
                         </li>
@@ -151,38 +153,38 @@
                 <div class="label-list-grid">
                     <ul class="label-list label-list-grid">
                         <li class="label-tag box">
-                            <a href="#">DIY</a>
+                            <a class="label-tag-link" href="#">DIY</a>
                         </li>
                         <li class="label-tag box">
-                            <a href="#">Paper</a>
+                            <a class="label-tag-link" href="#">Paper</a>
                         </li>
                         <li class="label-tag box">
-                            <a href="#">Tassels</a>
+                            <a class="label-tag-link" href="#">Tassels</a>
                         </li>
                         <li class="label-tag box">
-                            <a href="#">Headband</a>
+                            <a class="label-tag-link" href="#">Headband</a>
                         </li>
                         <li class="label-tag box">
-                            <a href="#">Felt</a>
+                            <a class="label-tag-link" href="#">Felt</a>
                         </li>
                         <li class="label-tag box">
-                            <a href="#">Pompom</a>
+                            <a class="label-tag-link" href="#">Pompom</a>
                         </li>
                         <li class="label-tag box">
-                            <a href="#">Dreamcatcher</a>
+                            <a class="label-tag-link" href="#">Dreamcatcher</a>
                         </li>
                         <li class="label-tag box">
-                            <a href="#">Snowflakes</a>
+                            <a class="label-tag-link" href="#">Snowflakes</a>
                         </li>
                         <li class="label-tag box">
-                            <a href="#">Paperfan</a>
+                            <a class="label-tag-link" href="#">Paperfan</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="footer box">
+            <footer class="footer box">
                 <p >@ Eat Sleep Craft Repeat, 2020</p>
-            </div>
+            </footer>
         </div>
     </body>
 </html>

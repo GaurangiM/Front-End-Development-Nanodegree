@@ -1,15 +1,15 @@
-#navigation-bar>ul{
+#navigation-bar ul {
     list-style: none;
     background: black;
     height: 40px;
     
 }
 
-.menu-mobile{
+.menu-mobile {
     display: none;
 }
 
-.widgets>li{
+.widgets li {
     display: inline-block;
     width: auto;
     height: auto;
@@ -23,28 +23,13 @@
     line-height: 16px;
 }
 
-.widgets>li>a{
+.menu-item {
     text-decoration: none;
     color: white;
 }
 
-.fa{
+.fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
-}
-
-#top-search>a{
-    color: white;
-    height: 80px;
-    font-size: 20px;
-    display: block;
-}
-
-
-#top-search {
-    position: absolute;
-    right: 70px;
-    top: 15px;
-    text-align: center;
 }

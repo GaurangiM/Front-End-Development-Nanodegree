@@ -10,11 +10,11 @@
 @import url('../Components/social-sharing.css');
 @import url('../Typography/typography.css');
 
-.box{
+.box {
     border: 1px solid #f8f4f4;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-rows: 300px 700px 200px 400px 250px 165px 50px;
     grid-template-areas: 
@@ -27,11 +27,11 @@
     "ft";
 }
 
-.blog-title{
+.blog-title {
     grid-area: title;
 }
 
-.blog-post{
+.blog-post {
     grid-area: post;
 }
 
@@ -46,7 +46,7 @@
     padding: 4px;
 }
 
-.blog-post ul{
+.blog-post-list {
     list-style: none;
     display: inline-flex;
 }
@@ -54,23 +54,19 @@
 /* On mouse-over, add a deeper shadow */
 .post-card:hover {
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
-  }  
+}  
 
-.post-card h2{
-    font-family: Florence, cursive;
-    font-size: 25px;
-}
-
-.post-card img{
+.post-card-img {
     height: 300px;
     border-radius: 3px;
+    width: 100%;
 }
 
-.post-card article{
+.post-card article {
     margin-bottom: 35px;
 }
 
-.post-card a{
+.continue-reading-link {
     text-transform: uppercase;
     background: black;
     color: white;
@@ -81,18 +77,16 @@
     text-decoration: none;
 }
 
-.subscription-box{
+.subscription-box {
     grid-area: sub;
 }
 
-.follow-links{
+.follow-links {
     grid-area: follow;
 }
 
-.labels{
+.label {
     grid-area: label;
-    
-
 }
 
 /*Media Queries for i-pad -----------------------------------------------*/
@@ -100,10 +94,10 @@
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1){
+  and (-webkit-min-device-pixel-ratio: 1) {
     
 
-    .container{
+    .container {
     display: grid;
     grid-template-rows: 325px 1365px 200px 650px 190px 190px 50px;
     grid-template-columns: 100%;
@@ -117,32 +111,32 @@
     "ft";
     }
 
-    .blog-title{
+    .blog-title {
         grid-area: title;
     }
 
-    .blog-post{
+    .blog-post {
         grid-area: post;
     }
 
-    .blog-post ul{
+    .blog-post-list {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .subscription-box{
+    .subscription-box {
         grid-area: sub;
     }
 
-    .pinned-post{
+    .pinned-post {
         grid-area: pin;
     }
 
-    .follow-links{
+    .follow-links {
         grid-area: follow;
     }
 
-    .follow-links-grid{
+    .follow-links-grid {
         
         display: flex;
         flex-wrap: wrap;
@@ -151,24 +145,24 @@
         padding-top: 2px;
     }
 
-    .social-link{
+    .social-link {
         width: 85px;
         height: 77px;
     }
 
-    .labels{
+    .labels {
         grid-area: label;
     }
 
-    .label-list-grid{
+    .label-list-grid {
         width: 675px;
     }
 
-    .footer{
+    .footer {
         grid-area: ft;
     }
 
-    a.button1{
+    a.button1 {
         margin: 0px 9.3em 0.3em 208px;
     }
 }
@@ -180,7 +174,7 @@
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
-    .container{
+    .container {
         display: grid;
         grid-template-rows: 325px 1300px 200px 650px 190px 140px 50px;
         grid-template-columns: 100%;
@@ -194,15 +188,15 @@
         "ft";
         }
 
-        .follow-links-grid{
+        .follow-links-grid {
             margin-left: 110px;
         }
 
-        .label-list-grid{
+        .label-list-grid {
             width: inherit;
         }
 
-        a.button1{
+        a.button1 {
             margin:0 9.3em 0.3em 344px;
         }
 
@@ -211,68 +205,64 @@
 /* Media query for iphone 6+,7+,8+-----------------------------------------------------*/
 @media only screen and (min-width: 414px) 
 and (max-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3){
+and (-webkit-min-device-pixel-ratio: 3) {
 
-    .menu-mobile{
+    .menu-mobile {
         display: block;
         background: black;
         height: 40px;
     }
 
-    #top-search{
+    #top-search {
         display: none;
     }
 
-    #title{
+    #title {
         padding-top: 0px;
         font-size: 50px;
     }
 
-    .container{
+    .container {
         grid-template-rows: 300px 2105px 180px 430px 260px 275px 50px;
     }
 
-    .post-card img{
+    .post-card-img {
         height: 200px;
     }
 
-    .post-card{
+    .post-card {
         height: 480px;
     }
 
-    .thumbnail img{
+    .thumbnail-img {
         width: 145px;
         height: 145px;
     }
 
-    .follow-links-grid{
+    .follow-links-grid {
         margin-left: 0px;
         padding-top: 0px;
     }
 
-    .social-link{
+    .social-link {
         width: 89px;
         height: 80px;
     }
 
-    .label-tag{
+    .label-tag {
         width: fit-content;
         height: 35px;
         line-height: 35px;
     }
 
-    .pinned-post{
+    .pinned-post {
         padding: inherit;
     }
 
-    .label-list-grid{
+    .label-list-grid {
         width: 355px;
     }
 
-    .footer p{
-        font-size: 18px;
-        line-height: 42px;
-    }
 }
 
 /* Landscape for i-phone 6/7/8 plus */
@@ -282,24 +272,34 @@ and (-webkit-min-device-pixel-ratio: 3){
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
 
-    .container{
+    .container {
         grid-template-rows: 245px 1346px 180px 300px 225px 210px 50px;
     }
 
-    .follow-links-grid{
-        margin-left: 35px;
+    .follow-links-grid {
+        margin-left: 0px;
     }
 
     .label-list-grid {
         width: fit-content;
     }
 
-    .blog-title{
+    .blog-title {
         height: 245px;
     }
 
-    a.button1{
+    a.button1 {
         margin: 0px 9.3em 0.3em 197px;
+    }
+
+    .social-link {
+        width: 96px;
+    }
+
+    .social-link .social-icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
     }
 }
 
@@ -310,11 +310,11 @@ and (-webkit-min-device-pixel-ratio: 3){
   (min-device-width: 800px) 
   and (max-device-width: 1280px) {
 
-    .post-card{
+    .post-card {
         width: 335px;
     }
 
-    a.button1{
+    a.button1 {
         margin: 10px 9.3em 0.3em 233px;
     }
 }
@@ -324,35 +324,35 @@ and (-webkit-min-device-pixel-ratio: 3){
   (max-device-width: 1280px) 
   and (orientation: landscape) { 
 
-    .post-card{
+    .post-card {
         width: 285px;
         margin: 4px;
         padding: 2px;
     }
 
-    .pinned-post h2{
+    .pinned-post h2 {
         font-size: 35px;
     }
 
-    .follow-links h2{
+    .follow-links h2 {
         font-size: 35px;
     }
 
-    .labels h2{
+    .labels h2 {
         font-size: 35px;
     }
 
-    a.button1{
+    a.button1 {
         margin: 10px 9.3em 0.3em 472px;
     }
 
 }
 /*--------------------------------------------------------------------------------*/
-@media only screen and (max-device-width: 740px){
+@media only screen and (max-device-width: 740px) {
 
-    .container{
+    .container {
     display: grid;
-    grid-template-rows: 300px 2105px 200px 445px 270px 190px 50px;
+    grid-template-rows: 300px 1390px 200px 290px 270px 190px 50px;
     grid-template-columns: 100%;
     grid-template-areas: 
     "title"
@@ -364,62 +364,71 @@ and (-webkit-min-device-pixel-ratio: 3){
     "ft";
     }
 
-    .blog-title{
+    .blog-title {
         grid-area: title;
     }
 
-    .blog-post{
+    .blog-post {
         grid-area: post;
     }
 
-    .blog-post ul{
+    .blog-post-list {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .subscription-box{
+    .subscription-box {
         grid-area: sub;
     }
 
-    .pinned-post{
+    .pinned-post {
         grid-area: pin;
     }
 
-    .follow-links{
+    .follow-links {
         grid-area: follow;
     }
 
-    .follow-links-grid{
+    .follow-links-grid {
         
         display: flex;
         flex-wrap: wrap;
-        width: fit-content;
+        width: 100%;
         margin-left: 0px;
         padding-top: 2px;
     }
 
-    .social-link{
+    .social-link {
         width: 85px;
         height: 86px;
     }
 
-    .labels{
+    .labels {
         grid-area: label;
     }
 
-    .label-list-grid{
+    .label-list-grid {
         width: inherit;
     }
 
-    .footer{
+    .footer {
         grid-area: ft;
+    }
+
+    a.button1 {
+        margin: 0px 9.3em 0.3em 205px;
+    }
+
+    .thumbnail-img {
+        width: 135px;
+        height: 160px;
     }
 }
 
 @media only screen and (max-width: 740px) and (orientation: landscape) {
-    .container{
+    .container {
         display: grid;
-        grid-template-rows: 300px 1020px 200px 295px 240px 190px 50px;
+        grid-template-rows: 300px 1370px 200px 295px 240px 190px 50px;
         grid-template-columns: 100%;
         grid-template-areas: 
         "title"
@@ -431,11 +440,335 @@ and (-webkit-min-device-pixel-ratio: 3){
         "ft";
         }
 
-        .follow-links-grid{
+        .follow-links-grid {
             width: auto;
         }
 
-        a.button1{
+        a.button1 {
             margin: 0px 9.3em 0.3em 197px;
         }
+
+        .blog-post-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .thumbnail-img {
+            width: 140px;
+            height: 150px;
+        }
+
+        .follow-links-grid {
+            margin-left: 0px;
+        }
+
+        .social-link {
+            width: 100px;
+        }
+
+        .label-list-grid {
+            width: 655px;
+        }
+
+        #title {
+            padding-top: 0px;
+            font-size: 55px;
+        }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .container {
+        grid-template-rows: 300px 2485px 165px 445px 270px 255px 50px;
+    }
+
+    #title {
+        padding-top: 0px;
+        font-size: 40px;
+    }
+
+    .post-card {
+        width: 285px;
+        height: 585px;
+        margin: 1px;
+    }
+
+    .thumbnail {
+        padding: 5px;
+    }
+
+    .thumbnail-img {
+        width: 145px;
+        height: 140px;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+    .blog-title {
+        height: 200px;
+    }
+
+    .container {
+        grid-template-rows: 200px 1200px 170px 315px 255px 215px 50px;
+    }
+
+    .post-card-img {
+        height: 220px;
+    }
+
+    .post-card {
+        width: 235px;
+        height: 535px;
+        margin: 3px;
+    }
+
+    a.button1 {
+        margin: 10px 9.3em 0.3em 230px;
+    }
+
+    .follow-links-grid {
+        margin-left: 48px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 715px){
+    .container {
+        grid-template-rows: 300px 1365px 200px 210px 225px 190px 50px;
+        grid-template-columns: 100%;
+    }
+
+    .post-card {
+        width: 250px;
+    }
+
+    .thumbnail-img {
+        width: 100px;
+        height: 115px;
+    }
+
+    #title {
+        font-size: 50px;
+    }
+
+    .social-link .social-icon {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    .h2 {
+        font-size: 22px;
+    }
+
+    .label-list-grid {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 615px) and (orientation: landscape){
+    .container {
+        grid-template-rows: 300px 1420px 200px 210px 225px 190px 50px;
+        grid-template-columns: 100%;
+    }
+
+    .post-card {
+        width: 220px;
+        height: 630px;
+    }
+
+    a.button1 {
+        margin: 0px 9.3em 0.3em 128px;
+    }
+
+    .follow-links-grid {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 556px) and (orientation: landscape){
+    .container {
+        grid-template-rows: 300px 1325px 200px 210px 225px 190px 50px;
+        grid-template-columns: 100%;
+    }
+
+    .post-card {
+        width: 185px;
+        height: 570px;
+    }
+
+    .post-card-img {
+        height: 200px;
+    }
+
+    .thumbnail {
+        padding: 5px;
+    }
+
+    .thumbnail-img {
+        width: 75px;
+        height: 90px;
+    }
+
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .container {
+        grid-template-rows: 350px 2485px 165px 445px 270px 255px 50px;
+    }
+
+    #title {
+        padding-top: 0px;
+        font-size: 50px;
+    }
+
+    .blog-title {
+        height: 350px;
+    }
+
+    .post-card-img {
+        height: 250px;
+    }
+
+    .post-card {
+        height: 555px;
+    }
+
+    .thumbnail-img {
+        width: 135px;
+        height: 140px;
+    }
+
+    a.button1 {
+        margin: 0px 9.3em 0.3em 35px;
+    }
+
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    .container {
+        grid-template-rows: 300px 1280px 165px 310px 200px 200px 50px;
+    }
+
+    .blog-title {
+        height: 300px;
+    }
+
+    .post-card {
+        width: 275px;
+    }
+
+    .thumbnail-img {
+        width: 130px;
+        height: 140px;
+    }
+
+    a.button1 {
+        margin: 0px 9.3em 0.3em 165px;
+    }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container {
+        grid-template-rows: 350px 2370px 165px 445px 270px 255px 50px;
+    }
+
+    #title {
+        padding-top: 0px;
+        font-size: 45px;
+    }
+
+    .blog-title {
+        height: 350px;
+    }
+
+    .post-card-img {
+        height: 210px;
+    }
+
+    .post-card {
+        height: 540px;
+    }
+
+    a.button1 {
+        width: 240px;
+    }
+
+    .thumbnail-img {
+        width: 100px;
+        height: 125px;
+    }
+
+    .social-link .social-icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    a.button1 {
+        margin: 0px 9.3em 0.3em 31px;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    .container {
+        grid-template-rows: 285px 1240px 165px 300px 230px 220px 50px;
+        grid-template-columns: 100%;
+    }
+
+    .blog-title {
+        height: 285px;
+    }
+
+    .post-card {
+        width: 230px;
+    }
+
+    .social-link {
+        width: 84px;
+    }
 }

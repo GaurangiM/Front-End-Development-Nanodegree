@@ -1,4 +1,4 @@
-.follow-links-grid{
+.follow-links-grid {
     display: flex;
     width: 670px;
     /*height: 600px;*/
@@ -7,7 +7,7 @@
     margin-left: 210px;
 }
 
-.follow-links>h2{
+.follow-links h2 {
     text-align: center;
     font-family: Florence, cursive;
     font-size: 25px;
@@ -15,15 +15,15 @@
     padding-bottom: 27px;
 }
 
-.social-link{
+.social-link {
     width: 182px;
     height:77px;
 }
 
-.social-network-list{
+.social-network-list {
     list-style: none;
 }
-.social-link>i{
+.social-link .social-icon {
     color: #df1a71;
     background: black;
     border-radius: 50%;
@@ -34,6 +34,6 @@
     font-size: 25px;
 }
 
-.social-link>a{
+.social-link {
     text-decoration: none;
 }

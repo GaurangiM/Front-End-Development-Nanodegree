@@ -1,9 +1,9 @@
-.footer{
+.footer {
     grid-area: ft;
     background: black;
 }
 
-.footer p{
+.footer p {
     color: white;
     text-align: center;
     font-size: 17px;

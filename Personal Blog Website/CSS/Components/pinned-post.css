@@ -1,26 +1,26 @@
-.pinned-post{
+.pinned-post {
     grid-area: pin;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.pinned-post li{
+.thumbnail {
     list-style: none;
     padding: 10px;
 }
 
-.pinned-post h2{
+.pinned-post h2 {
     text-align: center;
     font-family: Florence, cursive;
     font-size: 25px;
 }
 
-.thumbnail img{
+.thumbnail-img {
     width: 280px;
     height: 250px;
 }
 
-.pinned-post ul{
+.pinned-post-list {
     margin-top: 0px;
 }

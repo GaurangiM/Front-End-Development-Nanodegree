@@ -1,4 +1,4 @@
-.label-list-grid{
+.label-list-grid {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,19 +6,19 @@
     flex-wrap: wrap;
 }
 
-.labels h2{
+.labels h2 {
     text-align: center;
     font-family: Florence, cursive;
     font-size: 25px;
     margin: auto;
 }
 
-.label-list{
+.label-list {
     text-decoration: none;
     list-style: none;
 }
 
-.label-tag{
+.label-tag {
     width: fit-content;
     height: 30px;
     text-align: center;
@@ -26,7 +26,7 @@
     margin: 10px;
 }
 
-.label-tag>a{
+.label-tag-link {
     color: #df1a71;
     font: normal bold 15px Florence, cursive;
     line-height: 100%;

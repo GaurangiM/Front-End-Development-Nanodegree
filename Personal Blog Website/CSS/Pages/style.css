@@ -10,11 +10,20 @@
 @import url('../Components/social-sharing.css');
 @import url('../Typography/typography.css');
 
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
 .box {
     border: 1px solid #f8f4f4;
 }
 
 .container {
+    max-width: 100%;
     display: grid;
     grid-template-rows: 300px 700px 200px 400px 250px 165px 50px;
     grid-template-areas: 

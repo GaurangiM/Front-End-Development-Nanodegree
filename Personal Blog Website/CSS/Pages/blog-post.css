@@ -9,6 +9,15 @@
 @import url('../Components/social-sharing.css');
 @import url('../Typography/typography.css');
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+body {
+    position: relative;
+}
+
 .blog-post-section ul {
     text-align: center;
     font-family: Florence, cursive;

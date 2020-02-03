@@ -1,4 +1,4 @@
-## [Landing Page]
+## [Landing Page](https://gaurangim.github.io/Landing%20Page/index.html)
 
 ### Project Description: 
 

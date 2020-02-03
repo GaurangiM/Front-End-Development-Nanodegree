@@ -9,3 +9,10 @@ Developed a [Personal Blog website](https://gaurangim.github.io/Personal%20Blog%
 * Pages made mobile-friendly and responsive on most popular devices
 
 Proficiencies include: HTML5, CSS3, Flexbox, CSS grid
+
+## Project 2: [Landing Page]
+Developed a [Landing Page] using HTML5 ,CSS3 and Javascript. Skills include:
+* Built navigation Dynamically using Javascript
+* When menu in navigation is clicked, appropriate section is scrolled to viewport
+
+Proficiencies include: HTML5, CSS3, Javascript

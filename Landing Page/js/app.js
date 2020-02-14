@@ -17,13 +17,15 @@
 const nav_bar=document.getElementsByClassName('navbar__menu');
 const nav_list=document.getElementById('navbar__list');
 const section_list=document.querySelectorAll('section');
+
 let i=1;
 // End Global Variables
 
 section_list.forEach(element =>{
     // Build menu
     const list_item=document.createElement('li');
-    list_item.innerHTML=`<a href="#${element.id}" onClick="addMenuLinkClass(this,event)">`+'Section ' +i+`</a>`;
+    list_item.setAttribute('id','navsection'+i);
+    list_item.innerHTML=`<a href="#${element.id}" onClick="addMenuLinkClass(this)">`+'Section ' +i+`</a>`;
     i++;
     nav_list.appendChild(list_item);
     list_item.addEventListener('click',function(event){
@@ -37,10 +39,17 @@ section_list.forEach(element =>{
     window.addEventListener("scroll", function () {
 
         // Add class 'active' to section when near top of viewport
-        if (isInViewport(element)) {
-            element.classList.add("active-class");
-            removeActiveClass(element);
-        }
+        section_list.forEach(element=>{
+            const nav_link=document.querySelector("#nav"+element.id);
+            if (isInViewport(element)) {
+                element.classList.add("active-class");
+                nav_link.classList.add("menu__link");
+            }
+            else {
+                element.classList.remove("active-class");
+                nav_link.classList.remove("menu__link");
+            }    
+        })
     });
 })
 
@@ -62,7 +71,7 @@ var isInViewport = (elem) => {
 };
 
 //Start Helper Functions
-const addMenuLinkClass=(element,event)=>{
+const addMenuLinkClass=(element)=>{
     element.classList.add("menu__link");
     const links=document.querySelectorAll("a");
     for(let i=0;i<links.length;i++)

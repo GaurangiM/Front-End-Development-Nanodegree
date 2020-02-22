@@ -1,0 +1,22 @@
+{
+  "name": "weather-journal-package",
+  "version": "1.0.0",
+  "description": "This project is about to create an asynchronous web app that uses Web API and user data to dynamically update the UI.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GaurangiM/Front-End-Development-Nanodegree/tree/master/Weather%20Journal%20App"
+  },
+  "author": "Gaurangi M",
+  "license": "ISC"
+}

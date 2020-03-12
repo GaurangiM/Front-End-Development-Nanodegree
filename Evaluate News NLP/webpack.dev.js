@@ -9,10 +9,6 @@ module.exports = {
         libraryTarget: 'var',
         library: 'Client'
     },
-    devServer: {
-        proxy: {
-          '/': 'http://localhost:8080'
-        }},
     mode: 'development',
     devtool: 'source-map',
     stats: 'verbose',

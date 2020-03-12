@@ -5,8 +5,8 @@ function handleSubmit(event) {
     let formText = document.getElementById('name').value
     if(Client.checkForName(formText))
     {
-        const getData=async(url='http://localhost:8080/test',data={})=>{
-            const response=await fetch(url,{
+        /*const getData=async(url=' ',data={})=>{
+            const response=await fetch(`http://localhost:8080/api?input=${formText}`,{
 
                 method: 'POST',
                 headers: {
@@ -23,8 +23,22 @@ function handleSubmit(event) {
                 console.log('error',error);
                 
             }
+        }*/
+        const getData=async(data={})=>{
+            const res = await fetch(`http://localhost:8080/api?input=${formText}`);
+            try{
+            const newData=await res.json();
+            console.log(newData);
+            return newData;
+            }
+            catch(error)
+            {
+                console.log(error);
+            }
         }
-        getData(undefined,{url:formText});
+        getData({url:formText});
+
+
     }
 
     /*console.log("::: Form Submitted :::")

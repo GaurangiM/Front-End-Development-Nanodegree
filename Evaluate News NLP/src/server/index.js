@@ -42,7 +42,7 @@ var textapi = new AYLIENTextAPI({
     }
   });  */
 
-  app.post('/test',function(req,res){
+  app.get('/test',function(req,res){
     console.log(req.body);
     return textapi.sentiment({
       url:req.body.url

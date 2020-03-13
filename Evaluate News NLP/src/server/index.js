@@ -25,24 +25,14 @@ app.listen(8080, function () {
     console.log('Example app listening on port 8080!')
 })
 
-/*app.get('/test', function (req, res) {
-    res.send(mockAPIResponse)
-})*/
-
 var textapi = new AYLIENTextAPI({
     application_id: process.env.API_ID,
     application_key: process.env.API_KEY
   });
 
-  /*textapi.sentiment({
-    'text': 'John is a very good football player!'
-  }, function(error, response) {
-    if (error === null) {
-      console.log(response);
-    }
-  });  */
 
-  app.get('/test',function(req,res){
+
+  app.post('/test',function(req,res){
     console.log(req.body);
     return textapi.sentiment({
       url:req.body.url

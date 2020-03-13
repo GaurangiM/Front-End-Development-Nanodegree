@@ -2,16 +2,18 @@ function handleSubmit(event) {
     event.preventDefault()
 
     // check what text was put into the form field
-    let formText = document.getElementById('name').value
+    let formText = document.getElementById('name').value;
+    console.log(formText);
     if(Client.checkForName(formText))
     {
-        /*const getData=async(url=' ',data={})=>{
-            const response=await fetch(`http://localhost:8080/api?input=${formText}`,{
+        const getData=async(url='/test',data={})=>{
+            const response=await fetch(url,{
 
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json',
                 },
+                credentials:'same-origin',
                 body: JSON.stringify(data)
             });
             try{
@@ -23,20 +25,9 @@ function handleSubmit(event) {
                 console.log('error',error);
                 
             }
-        }*/
-        const getData=async(data={})=>{
-            const res = await fetch(`http://localhost:8080/api?input=${formText}`);
-            try{
-            const newData=await res.json();
-            console.log(newData);
-            return newData;
-            }
-            catch(error)
-            {
-                console.log(error);
-            }
         }
-        getData({url:formText});
+
+        getData(undefined,{url:formText});
 
 
     }

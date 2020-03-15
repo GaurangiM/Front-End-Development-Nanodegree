@@ -6,7 +6,7 @@ function handleSubmit(event) {
     console.log(formText);
     if(Client.checkForName(formText))
     {
-        const getData=async(url='/test',data={})=>{
+        const getData=async(url='http://localhost:3000/test',data={})=>{
             const response=await fetch(url,{
 
                 method: 'POST',

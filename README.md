@@ -29,3 +29,44 @@ Proficiencies include:
 * HTML5, CSS3
 * Javascript with Node and Express
 * FETCH API
+
+## Project 4: Evaluate News Article with NLP
+Developed a web tool that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites. Skills include:
+* Built a Node environment with Express and the necessary project dependencies: cors and body-parser
+* Setup GET and POST routes
+* Used the Fetch API with my credentials and user input to get dynamic data into app routes
+* Chained different promises together
+* Accessed HTML elements with JavaScript and set their properties dynamically
+* Setting up Webpack server
+* Add Webpack Loaders and Plugins
+* Engaging in Sass styles
+* Implementing Service workers
+
+Proficiencies include:
+* HTML5, CSS3
+* Javascript with Node and Express
+* FETCH API
+* Webpack server
+* Node.js and Express server
+* Service workers
+
+## Project 5: Travel App
+Developed a travel app that, at a minimum, obtains a desired trip location & date from the user, and displays weather and an image of the location using information obtained from external APIs. Skills include:
+* Built a Node environment with Express and the necessary project dependencies: cors and body-parser
+* Setup GET and POST routes
+* Used the Fetch API with my credentials and user input to get dynamic data into app routes
+* Chained different promises together
+* Accessed HTML elements with JavaScript and set their properties dynamically
+* Setting up Webpack server
+* Add Webpack Loaders and Plugins
+* Engaging in Sass styles
+* Implementing Service workers
+* Designed page and layout
+
+Proficiencies include:
+* HTML5, CSS3
+* Javascript with Node and Express
+* FETCH API
+* Webpack server
+* Node.js and Express server
+* Service workers

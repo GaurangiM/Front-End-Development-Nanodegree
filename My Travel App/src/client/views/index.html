@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Travel Planner</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <h2>My Travel Planner</h2>
+  </header>
+  <div class="main-content">
+    <section id="form">
+      <form>
+        <div class="input-group">
+          <label class="field a-field a-field_a1">
+            <input type="text" id="location" class="field__input a-field__input" placeholder="e.g. India" required>
+            <span class="a-field__label-wrap">
+              <span class="a-field__label">Location</span>
+            </span>
+          </label>
+          
+        </div>
+        <div class="input-group">
+          <label class="field a-field a-field_a1">
+            <input class="field__input a-field__input" type="date" id="date1" >
+            <span class="a-field__label-wrap">
+              <span class="a-field__label-wrap">
+                <span class="a-field__label">Departure Date</span>
+              </span>
+              
+            </span>
+          </label>
+          
+        </div>
+        <div class="input-group">
+          <label class="field a-field a-field_a1">
+            <input type="date" id="date2" class="field__input a-field__input" >
+            <span class="a-field__label-wrap">
+              <span class="a-field__label">Return Date</span>
+            </span>
+          </label>
+        </div>
+        <div class="container">
+          <button id="button" class="ripple">Submit</button>
+        </div>
+        
+    </form>
+    </section>
+    <section id="output">
+      <label>
+        <p>
+        Your trip to  <span id="place" class="output-field">............</span>
+        starting on <span id="depart" class="output-field">............</span> 
+        till <span id="return" class="output-field">............</span>.
+        </p> 
+        <p>
+          Typical weather during your trip is <span id="temp" class="output-field">............</span> 
+        with temperature as high as <span id="tempHigh" class="output-field">............</span> &#8457
+        and low as <span id="tempLow" class="output-field">............</span> &#8457.
+        </p>
+        <p>Enojoy your stay of <span id="trip-length" class="output-field">............</span> days!</p>
+        
+        
+      </label>
+      <span class="image-hover img-zoom-out" id="trip-pic"><img id="picture" src="https://cdn.pixabay.com/photo/2017/09/04/16/58/passport-2714675_960_720.jpg"></span>
+    </section>
+  </div>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./service-worker.js');
+        })
+    }
+</script>
+ </body>
+</html>

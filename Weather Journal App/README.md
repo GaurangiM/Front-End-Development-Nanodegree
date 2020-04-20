@@ -1,9 +1,9 @@
-# Weather Journal App Project
+# :partly_sunny: Weather Journal App Project
 
-## Overview
+## :page_facing_up: Overview
 This project is about to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
 
-## Project Description
+## :pencil2: Project Description
 * Setup a Node environment with Express and the necessary project dependencies
 * Setup a server with GET and POST routes
 * Create developer credentials for a Web API

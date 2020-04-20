@@ -1,4 +1,4 @@
-# Weather Journal App Project
+# [Weather Journal App Project](https://gaurangim.github.io/Weather%20Journal%20App/website/index.html)
 
 ## Overview
 This project is about to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 

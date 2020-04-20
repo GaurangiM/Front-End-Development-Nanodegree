@@ -15,7 +15,7 @@ This project requires to build a web tool that allows users to run Natural Langu
 * Use Service workers
 * Access HTML elements with JavaScript and set their properties dynamically
 
-## Pre-requisites
+## ✅&nbsp; Pre-requisites
 * You need to have Node.js and NPM locally installed.
 * You need to start the express server locally by using command 'node server.js', where server.js is the file containing server code.
 

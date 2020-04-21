@@ -40,3 +40,5 @@ You might want to look into `server.js` to make change the port you want to use.
 | Node | `npm start`|
 | Test| `npm test` |
 | Prod| `npm build-prod`|
+
+Once the dependencies are installed, you can run  `npm start` to start the application. You will then be able to access it at `localhost:3000`.

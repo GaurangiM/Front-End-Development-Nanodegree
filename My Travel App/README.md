@@ -1,9 +1,9 @@
 # FEND Capstone - Travel App
 
-## Overview
+## :page_facing_up: Overview
 This project is about building out a travel app that, at a minimum, obtains a desired trip location & date from the user, and displays weather and an image of the location using information obtained from external APIs. 
 
-## Project Description
+## :pencil2:  Project Description
 * Plan out logic to input the output of one API to other API
 * Setup a Node environment with Express and the necessary project dependencies
 * Setup a server with GET and POST routes
@@ -27,3 +27,16 @@ This project is about building out a travel app that, at a minimum, obtains a de
 * [GeoNames](http://www.geonames.org/)
 * [Darksky](https://darksky.net/)
 * [Pixabay](https://pixabay.com/)
+
+## :hammer: Setup
+Clone this repo to your desktop and run `npm install` to install all the dependencies.
+
+You might want to look into `server.js` to make change the port you want to use.
+
+## :computer: Running/Building the project
+| Environment| Command
+| ------| ----|
+| Webpack Dev| `npm build-dev` |
+| Node | `npm start`|
+| Test| `npm test` |
+| Prod| `npm build-prod`|
